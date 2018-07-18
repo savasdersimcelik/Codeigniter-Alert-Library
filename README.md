@@ -19,25 +19,25 @@ $this->alert->set(array(
 2- Set the flash message by notification type
 ```php
 $this->alert->success(array(
-	"title" => "Success!", //required
+	"title" => "Success!", //optionally
 	"message" => "This alert box indicates a successful or positive action.", //required
 	"button" => "false", //optionally | TRUE or False
 	"url" => base_url("home"), //optionally
 ));
 $this->alert->info(array(
-	"title" => "Info!", //required
+	"title" => "Info!", //optionally
 	"message" => "This alert box indicates a neutral informative change or action.", //required
 	"button" => "false", //optionally | TRUE or False
 	"url" => base_url("home"), //optionally
 ));
 $this->alert->warning(array(
-	"title" => "Warning!", //required
+	"title" => "Warning!", //optionally
 	"message" => "This alert box indicates a warning that might need attention.", //required
 	"button" => "false", //optionally | TRUE or False
 	"url" => base_url("home"), //optionally
 ));
 $this->alert->danger(array(
-	"title" => "Danger!", //required
+	"title" => "Danger!", //optionally
 	"message" => "This alert box indicates a dangerous or potentially negative action.", //required
 	"button" => "false", //optionally | TRUE or False
 	"url" => base_url("home"), //optionally

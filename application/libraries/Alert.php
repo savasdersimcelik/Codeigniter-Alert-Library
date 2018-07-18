@@ -1,7 +1,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
-* Codeigniter Alert Libraryi
+* Codeigniter Alert Library
 * A Simple Flash Messaging Library to easily store flash data in session and view it in your page when loaded.
 *
 * @package     Codeigniter Flashdata library
@@ -9,7 +9,7 @@
 * @author      Savaş Dersim Çelik
 * @link        http://savasdersimcelik.com
 * @copyright   Copyright (c) 2018 Web Project (http://savasdersimcelik.com)
-* @version     v1.0.0
+* @version     v1.0.1
 *
 */
 
@@ -62,6 +62,7 @@ class Alert
 	public function success($array)
 	{
 		$array["type"] = "success";
+		$array["title"] = (!array_key_exists("title", $array)) ? "Success!" : $array["title"] ;
 		$this->set($array);
 	}
 
@@ -72,6 +73,7 @@ class Alert
 	public function danger($array)
 	{
 		$array["type"] = "danger";
+		$array["title"] = (!array_key_exists("title", $array)) ? "Danger!" : $array["title"] ;
 		$this->set($array);
 	}
 
@@ -82,6 +84,7 @@ class Alert
 	public function warning($array)
 	{
 		$array["type"] = "warning";
+		$array["title"] = (!array_key_exists("title", $array)) ? "Warning!" : $array["title"] ;
 		$this->set($array);
 	}
 
@@ -92,6 +95,7 @@ class Alert
 	public function info($array)
 	{
 		$array["type"] = "info";
+		$array["title"] = (!array_key_exists("title", $array)) ? "Info!" : $array["title"] ;
 		$this->set($array);
 	}
 
